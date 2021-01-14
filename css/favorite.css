@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Beon Medium';
+	src: url('./fonts/beon-webfont.eot');
+	src: local('Beon Medium'), url('./fonts/beon-webfont.eot?#iefix')
+		format('embedded-opentype'), url('./fonts/beon-webfont.woff')
+		format('woff'), url('./fonts/beon-webfont.ttf') format('truetype'),
+		url('./fonts/beon-webfont.svg#BeonMedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	position: relative;
+	background-color: black;
+}
+
+h1{
+	color:#FFFFFF;
+	text-align:center;
+	font-family: 'MotoyaLMaru W3 mono';
+}
+
+.text-beon{
+	font-size:20px;
+	font-family: 'Beon Medium';
+	color: #006DFF;
+	display:block;
+	text-align:center;
+	}
+
+#wrapper{
+}
+
+.container {
+	width: 100%;
+}
+
+#search-menu {
+	position: fixed;
+    top: 36px;
+    right: 192px;
+    height: 60px;
+    background-color: #888888;
+}
+
+#search-system-ver {
+	margin: 0 auto;
+	max-width: 360px;
+	min-width: 316px;
+	height: 378px;
+	position: absolute;
+	margin: 125px 0 0 -158px;
+	background-color: #000000;
+	border: solid 1px #FFFFFF;
+	opacity: 0;
+	animation-name: fadein-bottom;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+img#logo {
+	width: 120px;
+	height: 85px;
+	margin: 0 auto;
+}
+
+img.icon-over:hover {
+	filter: drop-shadow(0 0 7px #FFFFFF);
+	transition: all 0.2s;
+}
+
+p#logout {
+	position: absolute;
+	top: 27px;
+	right: 30px;
+	width: 38px;
+}
+
+p#search {
+	width: 35px;
+	right: 155px;
+	top: 27px;
+	position: absolute;
+}
+
+img.search-icon-over:hover {
+	filter: drop-shadow(0 0 6px #F4D221);
+	transition: all 0.2s;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-overflow-scrolling: touch;
+	will-change: scroll-position;
+}
+
+.tableF{
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+}
+
+
+container{
+position: absolute; /* 絶対指定 */
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 500px;
+  margin: -250px 0 0 -175px;
+}
+
+image_size_m{
+	width: 300px;
+	height: 200px;
+}
+
+.img_80 {
+	width: 100%;
+}
+
+table{
+	margin:0 auto;
+}

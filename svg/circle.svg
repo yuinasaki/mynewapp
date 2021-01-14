@@ -1,0 +1,10 @@
+<svg id="circle" xmlns="http://www.w3.org/2000/svg" width="150" height="150" stroke-width="10" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M421,247a74,74,0,1,1-74,74,74.09,74.09,0,0,1,74-74m0-1a75,75,0,1,0,75,75,75,75,0,0,0-75-75Z" transform="translate(-346 -246)"/>
+</svg>

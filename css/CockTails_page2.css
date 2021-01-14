@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'Beon Medium';
+	src: url('./fonts/beon-webfont.eot');
+	src: local('Beon Medium'), url('./fonts/beon-webfont.eot?#iefix')
+		format('embedded-opentype'), url('./fonts/beon-webfont.woff')
+		format('woff'), url('./fonts/beon-webfont.ttf') format('truetype'),
+		url('./fonts/beon-webfont.svg#BeonMedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	position:relative;
+	background-color: black;
+	}
+
+#wrapper{
+	position:relative;
+	}
+
+#search-system-ver{
+	margin:0 auto;
+	max-width:360px;
+	min-width:316px;
+	height:378px;
+	position:absolute;
+	margin:125px 0 0 -158px;
+	background-color:#000000;
+	border:solid 1px #FFFFFF;
+	   opacity: 0;
+   animation-name: fadein-bottom;
+   animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.text-beon{
+	font-family: 'Beon Medium';
+	}
+
+.text-motoya{
+	font-family: 'MotoyaLMaru W3 mono';
+	}
+
+.white-text{
+	font-family: MotoyaLMaru W3 mono;
+	color:#FFFFFF;
+}
+
+h1.white-text{
+	margin-top:8px;
+	font-size:30px;
+	text-align:center;
+}
+
+p.koumoku{
+	font-size:18px;
+	text-align:center;
+	margin-bottom:12px;
+}
+
+header{
+	position:fixed;
+	width: 100%;
+    margin:20px 0;
+}
+
+img#logo{
+	width:120px;
+	height:85px;
+	margin:0 auto;
+	}
+
+img.icon-over{
+	right:0;
+	top:0;
+	width:150%;
+	height:150%;
+	margin:15px 10px 0 0;
+	position:absolute;
+	}
+
+img.icon-under{
+	right:0;
+	top:0;
+	width:150%;
+	height:150%;
+	margin:15px 10px 0 0;
+	position:absolute;
+	}
+
+img.icon-under:hover{
+	position:absolute;
+	filter:drop-shadow(0 0 7px #FFFFFF);
+	transition: all 0.2s;
+	}
+
+h4.logo-space{
+	width:100%;
+	margin:0 auto;
+}
+
+select{
+  -webkit-appearance:none;
+  appearance:none;
+  outline: none;
+  border: 1px solid #FFFFFF;
+  width:261px;
+  height:40px;
+  margin:0 auto;
+  padding-left:12px;
+  font-size:16px;
+  border-radius:1px;
+  background-color:#000000;
+  background-image:url("../svg/arrow_1.svg");
+  background-repeat: no-repeat;
+  background-position: 230px 10px;
+  background-size:18px;
+  color:#FFFFFF;
+}
+
+select:hover{
+	background-color:#666666;
+	transition: all 0.2s;
+	}
+
+.select-box{
+	width:261px;
+    margin:0 auto;
+  	position:relative;
+}
+
+.selectbox::after{
+  content:"";
+  display:block;
+  width:10px;
+  height:10px;
+  position:absolute;
+  right:5%;
+  top:35%;
+  transform:rotate(45deg)translateY(-30%);
+}
+
+input{
+	/*ボタン標準デザインをリセット*/
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+	}
+
+input#btn-primary{
+	/*標準デザインを強制リセットしたため、!importamtで優先指定しています*/
+	width:213px;
+	height:48px;
+	display:block;
+	margin:0 auto;
+	font-family: MotoyaLMaru W3 mono;
+	color: #FFFFFF!important;
+	background-color: blackimportant;
+	border: solid 3px #FF4DA4!important;
+	background-image:url("../svg/search_icon.svg");
+	background-repeat: no-repeat;
+	background-position: 13px 11px;
+	background-size:20px;
+	}
+
+input#btn-primary:hover {
+	/*標準デザインを強制リセットしたため、!importamtで優先指定しています*/
+    background-color: #FF4DA4;
+    color: #FFFFFF!important;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px #FF4DA4;
+    transition: all 0.2s;
+	}
+
+a{
+	color: inherit;
+	display: block;
+	height: 100%;
+	padding: 5px 0px;
+	text-align: center;
+	text-decoration: none;
+  }
+
+.BG-text{
+	color:#008BFF;
+	font-size: 20vmax;
+	line-height:0.9em;
+	letter-spacing:10px;
+	display:block;
+}
+
+ #BG-text-wrapper{
+	width:100%;
+	height:100%;
+	margin-top:110px;
+	margin-left:20px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+ 	}
+
+ .container{
+position: absolute; /* 絶対指定 */
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 460px;
+}
+
+#login_system_inner	{
+	margin: 0 auto;
+	max-width:296px;
+}
+
+p#logout{
+	position:absolute;
+	right:0;
+	top:0;
+	}
+
+p#favorite{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+p#favorite-list{
+	display:block;
+	margin:13px auto;
+	width:180px;
+	height:26px;
+	font-size:16px;
+	padding-bottom:30px;
+	font-family: MotoyaLMaru W3 mono;
+	background-color: black;
+	color: #FFD900;
+	border: solid 1px #FFD900;
+	border-bottom-color:#FFFFFF;
+	border-radius:1px;
+	}
+
+p#favorite-list:hover{
+    background-color: #FFD900;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px #FFD924;
+    transition: all 0.2s;
+	}
+
+p#BG-number1 {
+	color: #FF4DA4;
+	filter: drop-shadow(0 0 8px #FF4DA4);
+	transition: all 0.1s;
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+p#BG-number2 {
+	color: #FFD924;
+	filter: drop-shadow(0 0 8px #FFD924);
+	transition: all 0.3s;
+}
+
+p#BG-number3 {
+	color: #00B4FF;
+	filter: drop-shadow(0 0 8px #00B4FF);
+	transition: all 0.5s;
+}
+
+#BG-text-wrapper {
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: flash;
+  animation-duration: 4s;
+  animation-name: flash;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

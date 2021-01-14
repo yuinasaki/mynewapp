@@ -1,0 +1,12 @@
+<svg id="triangle" xmlns="http://www.w3.org/2000/svg" width="150" height="150" stroke-width="1" viewBox="0 0 151.62 151.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="0.81 151.12 150.81 151.12 76.31 1.12 0.81 151.12"/>
+</svg>

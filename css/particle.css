@@ -1,0 +1,108 @@
+body{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:black;
+}
+
+.original__item{
+	z-index: 999999;
+	pointer-events: none;
+
+}
+
+
+/*オブジェクトをランダムに配置するためのシート*/
+/*コピー元として使うだけなので、display:noneして、非表示にしている*/
+.original {
+  display: none;
+}
+
+/*増殖用の画像*/
+.original__item {
+  /* 座標を下部にしている*/
+  position: fixed;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+}
+
+/*増殖する場所*/
+#js-wrapper {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*発光テキスト*/
+.area_FF4DA4 {
+  animation: neonBlur_FF4DA4 16s infinite;
+}
+
+.area_00B4FF {
+  animation: neonBlur_00B4FF 16s infinite;
+}
+
+.area_FFD924 {
+  animation: neonBlur_FFD924 16s infinite;
+}
+
+.area_FFFFFF {
+  animation: neonBlur_FFFFFF 16s infinite;
+}
+
+.area > span:nth-child(1) {
+  opacity: .5;
+  font-weight: 800;
+}
+.area > span:nth-child(2) {
+  animation: neonBlink 5s infinite;
+}
+.area > span:nth-child(3) {
+  opacity: .4;
+}
+.area > span:nth-child(4) {
+  animation: neonBlink 2s infinite;
+}
+
+.area > span:nth-child(5) {
+  opacity: .6;
+}
+
+@keyframes neonBlink {
+  0% { opacity: 1; }
+  10% { opacity: .6; }
+  12% { opacity: 1; }
+  15% { opacity: .4; }
+  17% { opacity: 1; }
+  18% { opacity: .3; }
+  19% { opacity: 1; }
+  89% { opacity: 1; }
+  91% { opacity: .7; }
+  94% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes neonBlur_FF4DA4 {
+  0% { text-shadow: 0px 0px 25px #FF4DA4; }
+  50% { text-shadow: 0px 0px 75px #FF4DA4; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px #FF4DA4; }
+}
+
+@keyframes neonBlur_FFD924 {
+  0% { text-shadow: 0px 0px 25px #FFD924; }
+  50% { text-shadow: 0px 0px 75px #FFD924; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px #FFD924; }
+}
+
+@keyframes neonBlur_00B4FF {
+  0% { text-shadow: 0px 0px 25px #00B4FF; }
+  50% { text-shadow: 0px 0px 75px #00B4FF; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px #00B4FF; }
+}
+
+@keyframes neonBlur_FFFFFF {
+  0% { text-shadow: 0px 0px 5px #FFFFFF; }
+  50% { text-shadow: 0px 0px 75px #FFFFFF; filter: blur(0.5px) }
+  100% { text-shadow: 0px 0px 25px #FFFFFF; }
+}
